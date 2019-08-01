@@ -1,0 +1,16 @@
+body{
+  background-color: #ccc;
+  #root{
+    max-width: 1000px;
+    margin: 50px auto 0;
+    .Counter{
+      display: flex;
+      justify-content: space-between;
+      width: 100px;
+      span{
+        font-size: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+}
