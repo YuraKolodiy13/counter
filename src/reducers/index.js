@@ -1,21 +1,9 @@
-const initialState = {
-  result: 0
-};
+import {combineReducers} from 'redux'
 
-const reducer = (state = initialState, action) => {
-  switch (action.type) {
-    case 'INCREASE':
-      return{
-        result: state.result + 1
-      };
-    case 'DECREASE':
-      return{
-        result: state.result - 1
-      };
+import count1 from './count1'
+import count2 from './count2'
 
-    default:
-      return state
-  }
-};
-
-export default reducer;
+export default combineReducers({
+  count1,
+  count2
+});
